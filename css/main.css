@@ -16,13 +16,34 @@ img {
   max-width: 100%;
   height: auto; }
 
-p {
-  padding: 2rem 0; }
+.heading-primary {
+  font-size: 4rem;
+  color: #000;
+  font-family: "Special Elite", cursive; }
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100px); }
+  to {
+    transform: translate(0); } }
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100px); }
+  to {
+    transform: translate(0); } }
+
+@keyframes fade {
+  from {
+    opacity: 0.6; }
+  to {
+    opacity: 1; } }
 
 .navigation {
   display: flex;
   flex-flow: row wrap;
-  position: relative; }
+  position: relative;
+  background-color: #632c65; }
   .navigation__menu {
     position: relative;
     margin: 1rem;
@@ -31,7 +52,7 @@ p {
     display: inline-block;
     height: 0.5rem;
     width: 4rem;
-    background-color: #632c65;
+    background-color: #e2a9e5;
     border-radius: 1rem;
     transition: all 0.2s; }
   .navigation__icon::before, .navigation__icon::after {
@@ -114,3 +135,78 @@ p {
     transition: all 2s ease; }
     .navigation__dropdown--active {
       display: block; }
+
+.header {
+  height: 93vh;
+  position: relative;
+  overflow: hidden; }
+  .header__back {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: relative;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    animation: fade 1.5s ease forwards; }
+    .header__back:nth-of-type(1) {
+      background-image: url(../../img/vino1.jpg); }
+    .header__back:nth-of-type(2) {
+      background-image: url(../../img/vino2.jpg); }
+    .header__back:nth-of-type(3) {
+      background-image: url(../../img/vino3.jpg); }
+  .header__content {
+    color: #000;
+    text-align: center;
+    width: 55%;
+    animation: slideDown 0.8s ease-in;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1rem;
+    font-family: "Special Elite", cursive; }
+  .header__text {
+    font-size: 2rem; }
+  .header__btn {
+    border: none;
+    background-color: #632c65;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 30px;
+    animation: slideUp 0.8s ease-in forwards;
+    font-family: inherit; }
+  .header__link {
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    color: #4b384c; }
+
+.arrow {
+  font-size: 2rem;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  background-color: #4b384c;
+  text-align: center;
+  line-height: 2rem; }
+
+.arrow:hover {
+  background-color: #632c65; }
+
+.arrow-left {
+  left: 10px;
+  z-index: 2; }
+
+.arrow-right {
+  right: 10px;
+  z-index: 2; }
