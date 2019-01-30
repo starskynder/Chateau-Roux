@@ -3,6 +3,7 @@
   @include flex-row-wrap;
 
   position: relative;
+  background-color: $bossanova;
 
   &__menu {
     position: relative;
@@ -17,7 +18,7 @@
       display: inline-block;
       height: 0.5rem;
       width: 4rem;
-      background-color: $bossanova;
+      background-color: $french-lilac;
       border-radius: 1rem;
       transition: all 0.2s;
     }
