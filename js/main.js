@@ -30,5 +30,41 @@ function showDropdown(e) {
   }
 }
 
-const parent = document.querySelector(".navigation__dropdown");
-console.log(parent.parentNode);
+const slides = document.getElementsByClassName("header__back");
+console.log(slides);
+console.log(slides[0]);
+
+const handleLeft = document.querySelector(".arrow-left");
+const handleRight = document.querySelector(".arrow-right");
+let slideIndex = 1;
+
+handleLeft.addEventListener("click", () => {
+  plusSlide(-1);
+});
+handleRight.addEventListener("click", () => {
+  plusSlide(+1);
+});
+
+console.log(slideIndex);
+slideImg(slideIndex);
+
+function plusSlide(num) {
+  console.log("click");
+  slideImg((slideIndex += num));
+}
+
+function slideImg(n) {
+  console.log(n);
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  console.log(slideIndex);
+  slides[slideIndex - 1].style.display = "flex";
+}
