@@ -1,0 +1,156 @@
+// NAVIGATION
+.navigation {
+  @include flex-row-wrap;
+
+  position: relative;
+
+  &__menu {
+    position: relative;
+    margin: 1rem;
+    margin-left: auto;
+  }
+
+  &__icon {
+    &,
+    &::before,
+    &::after {
+      display: inline-block;
+      height: 0.5rem;
+      width: 4rem;
+      background-color: $bossanova;
+      border-radius: 1rem;
+      transition: all 0.2s;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+    }
+
+    &::before {
+      top: -1rem;
+    }
+
+    &::after {
+      top: 1rem;
+    }
+  }
+
+  &__btn {
+    border: none;
+    display: block;
+    background-color: transparent;
+    position: relative;
+    margin: 1.2rem;
+    padding: 0;
+  }
+
+  &__btn--active &__icon {
+    background-color: transparent;
+  }
+
+  &__btn--active &__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  &__btn--active &__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+
+  &__list {
+    @include flex-col;
+
+    list-style-type: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    z-index: 3;
+    height: 100vh;
+    background-color: $french-lilac;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+
+    &--active {
+      width: 70vw;
+    }
+  }
+
+  &__item {
+    font-size: 3.3rem;
+    margin: 1rem;
+  }
+
+  &__drop-btn {
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0;
+    color: $white;
+    display: block;
+
+    &:focus,
+    &:hover {
+      color: $bossanova;
+    }
+
+    &::after,
+    &.triangle::after {
+      font-size: 20px;
+      display: inline-block;
+      padding: 0 5px;
+      content: "▼";
+    }
+
+    &.triangle::after {
+      content: "▲";
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      display: block;
+      color: $white;
+      font-size: inherit;
+    }
+
+    &:focus,
+    &:hover {
+      color: $vodoo;
+    }
+
+    &--drop {
+      &:link,
+      &:visited {
+        padding-left: 1.5rem;
+        border-bottom: 1px dotted $bossanova;
+        color: $bossanova;
+      }
+
+      &:focus,
+      &:hover {
+        background-color: $white;
+      }
+    }
+  }
+
+  &__dropdown {
+    display: none;
+    transition: all 2s ease;
+
+    &--active {
+      display: block;
+    }
+  }
+}
