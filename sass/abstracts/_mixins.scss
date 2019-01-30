@@ -1,0 +1,13 @@
+// MIXINS
+
+//Flex mixins
+
+@mixin flex-row-wrap {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+@mixin flex-col {
+  display: flex;
+  flex-flow: column wrap;
+}
