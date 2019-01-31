@@ -2,6 +2,7 @@
 .about {
   @include flex-row-wrap;
 
+  justify-content: center;
   padding: 5rem 2rem;
   background-color: $white;
   background-image: url(../img/lined_paper.png);
