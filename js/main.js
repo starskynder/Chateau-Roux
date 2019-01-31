@@ -68,3 +68,16 @@ function slideImg(n) {
   console.log(slideIndex);
   slides[slideIndex - 1].style.display = "flex";
 }
+
+const navigationLink = document.querySelectorAll(".navigation__link");
+
+navigationLink.forEach(v => {
+  v.addEventListener("click", closeMenu);
+});
+
+function closeMenu() {
+  document
+    .querySelector(".navigation__list")
+    .classList.remove("navigation__list--active");
+  menuButton.classList.toggle("navigation__btn--active");
+}
