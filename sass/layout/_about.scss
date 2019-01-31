@@ -1,0 +1,17 @@
+// ABOUT
+.about {
+  @include flex-row-wrap;
+
+  padding: 5rem 2rem;
+  background-color: $white;
+  background-image: url(../img/lined_paper.png);
+
+  &__content {
+    margin: 4rem 1rem;
+  }
+
+  &__text {
+    padding: 1rem;
+    font-size: 2.3rem;
+  }
+}
