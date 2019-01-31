@@ -11,7 +11,8 @@
   border-bottom: 4px dotted $black;
   font-family: "Special Elite", cursive;
 
-  &--tours {
+  &--tours,
+  &--shop {
     color: $white;
     border-color: $white;
   }
