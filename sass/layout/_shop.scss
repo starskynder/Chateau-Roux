@@ -1,0 +1,33 @@
+// SHOP (WINE SECTION)
+.shops {
+  @include flex-row-wrap;
+
+  justify-content: center;
+  background-color: $vodoo;
+  padding: 9rem 1.5rem;
+
+  &__offers {
+    @include flex-row-wrap;
+
+    justify-content: center;
+    margin-top: 7rem;
+  }
+
+  &__img {
+  }
+
+  &__box {
+    padding: 2rem;
+    margin: 2rem;
+    background-color: $white;
+    width: 30rem;
+
+    &--lifestyle {
+      background-color: $bossanova;
+      color: $white;
+    }
+  }
+
+  &__offers {
+  }
+}
