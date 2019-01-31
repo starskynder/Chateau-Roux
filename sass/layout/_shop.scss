@@ -17,10 +17,13 @@
   }
 
   &__box {
+    @include flex-col;
+
     padding: 2rem;
     margin: 2rem;
     background-color: $white;
     width: 30rem;
+    font-size: 2rem;
 
     &--lifestyle {
       background-color: $bossanova;
@@ -28,6 +31,7 @@
     }
   }
 
-  &__offers {
+  &__text {
+    margin: 3rem 0;
   }
 }
