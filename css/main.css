@@ -30,6 +30,14 @@ img {
     color: #fff;
     border-color: #fff; }
 
+.heading-tertiary {
+  font-family: "Special Elite", cursive;
+  margin: 2rem 0;
+  padding: 2rem;
+  background-color: #632c65;
+  text-align: center;
+  color: #fff; }
+
 @keyframes slideDown {
   from {
     transform: translateY(-100px); }
@@ -63,6 +71,16 @@ img {
       background-color: #f0a702;
       box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
       transform: translateY(3px); }
+  .btn--shop {
+    border: 3px solid #632c65;
+    color: #632c65;
+    padding: 1rem 3rem;
+    display: block;
+    margin-top: auto;
+    font-size: 2.3rem; }
+    .btn--shop:focus, .btn--shop:hover {
+      background-color: #632c65;
+      color: #fff; }
 
 .navigation {
   display: flex;
@@ -309,10 +327,15 @@ img {
     justify-content: center;
     margin-top: 7rem; }
   .shops__box {
+    display: flex;
+    flex-flow: column wrap;
     padding: 2rem;
     margin: 2rem;
     background-color: #fff;
-    width: 30rem; }
+    width: 30rem;
+    font-size: 2rem; }
     .shops__box--lifestyle {
       background-color: #632c65;
       color: #fff; }
+  .shops__text {
+    margin: 3rem 0; }
