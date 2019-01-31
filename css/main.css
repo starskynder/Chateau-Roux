@@ -26,7 +26,7 @@ img {
   font-size: 3rem;
   border-bottom: 4px dotted #000;
   font-family: "Special Elite", cursive; }
-  .heading-secondary--tours {
+  .heading-secondary--tours, .heading-secondary--shop {
     color: #fff;
     border-color: #fff; }
 
@@ -240,7 +240,7 @@ img {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  padding: 5rem 2rem;
+  padding: 9rem 2rem;
   background-color: #fff;
   background-image: url(../img/lined_paper.png); }
   .about__content {
@@ -254,7 +254,7 @@ img {
   flex-flow: row wrap;
   justify-content: center;
   background-color: #632c65;
-  padding: 5rem 1.5rem; }
+  padding: 9rem 1.5rem; }
   .tours__offers {
     display: flex;
     flex-flow: row wrap;
@@ -296,3 +296,23 @@ img {
     display: inline-block; }
   .tours__subtitle, .tours__price {
     display: block; }
+
+.shops {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: #4b384c;
+  padding: 9rem 1.5rem; }
+  .shops__offers {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 7rem; }
+  .shops__box {
+    padding: 2rem;
+    margin: 2rem;
+    background-color: #fff;
+    width: 30rem; }
+    .shops__box--lifestyle {
+      background-color: #632c65;
+      color: #fff; }
