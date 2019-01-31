@@ -1,0 +1,22 @@
+// BUTTONS
+.btn {
+  border: none;
+  padding: 1rem;
+  background-color: transparent;
+  font-size: inherit;
+  font-family: inherit;
+  transition: all 0.2s;
+
+  &--tours {
+    color: $white;
+    background-color: $bossanova;
+    margin-top: 2rem;
+
+    &:focus,
+    &:hover {
+      background-color: $orange;
+      box-shadow: 3px 3px 3px rgba($color: $black, $alpha: 0.6);
+      transform: translateY(3px);
+    }
+  }
+}
