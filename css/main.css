@@ -26,7 +26,7 @@ img {
   font-size: 3rem;
   border-bottom: 4px dotted #000;
   font-family: "Special Elite", cursive; }
-  .heading-secondary--tours, .heading-secondary--shop {
+  .heading-secondary--tours, .heading-secondary--shop, .heading-secondary--blog {
     color: #fff;
     border-color: #fff; }
 
@@ -221,7 +221,8 @@ img {
     margin-top: 3rem;
     animation: slideUp 0.8s ease-in forwards;
     font-family: inherit;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: all 0.2s ease-in-out; }
     .header__btn:focus, .header__btn:hover {
       background-color: #e2a9e5;
       color: #000; }
@@ -398,3 +399,50 @@ img {
     display: block;
     font-weight: 700;
     margin: 2rem; }
+
+.blog {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: #632c65;
+  padding: 9rem 1.5rem; }
+  .blog__posts {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    flex: 100%; }
+  .blog__post {
+    color: #fff;
+    font-size: 2.1rem;
+    max-width: 60rem;
+    margin: 5rem;
+    padding: 3rem 0; }
+  .blog__text {
+    margin: 4rem 0; }
+  .blog__title {
+    font-family: "Economica", sans-serif;
+    text-align: left; }
+    .blog__title::before, .blog__title::after {
+      content: ""; }
+  .blog__author, .blog__date {
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+    font-weight: 700;
+    background-color: #fff;
+    color: #4b384c; }
+  .blog__author::before {
+    content: "by: "; }
+  .blog__link {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem;
+    border: 3px solid #fff;
+    transition: all 0.2s ease-in-out; }
+    .blog__link:link, .blog__link:visited {
+      color: #fff; }
+    .blog__link:focus, .blog__link:hover {
+      background-color: #fff;
+      color: #4b384c; }
