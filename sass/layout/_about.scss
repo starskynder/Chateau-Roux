@@ -8,11 +8,21 @@
   background-image: url(../img/lined_paper.png);
 
   &__content {
+    @include flex-row-wrap;
+
+    justify-content: center;
     margin: 4rem 1rem;
+    flex: 100%;
   }
 
   &__text {
-    padding: 1rem;
+    padding: 3rem;
     font-size: 2.3rem;
+    flex: 0 1 60rem;
+  }
+
+  &__img {
+    display: block;
+    border: 6px solid $white;
   }
 }
