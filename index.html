@@ -22,12 +22,17 @@
     <nav>
       <div class="navigation">
         <div class="navigation__menu">
-          <button class="navigation__btn">
+          <button
+            class="navigation__btn"
+            aria-controls="menulist"
+            aria-label="menu button"
+            aria-expanded="false"
+          >
             <span class="navigation__icon">&nbsp;</span>
           </button>
         </div>
 
-        <ul class="navigation__list">
+        <ul class="navigation__list" id="menulist">
           <li class="navigation__item">
             <a href="#about" class="navigation__link">About </a>
           </li>
