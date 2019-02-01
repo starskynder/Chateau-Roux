@@ -55,6 +55,7 @@
     animation: slideUp 0.8s ease-in forwards;
     font-family: inherit;
     text-decoration: none;
+    transition: all 0.2s ease-in-out;
 
     &:focus,
     &:hover {
