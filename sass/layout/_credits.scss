@@ -1,0 +1,20 @@
+// CREDITS
+.credits {
+  padding: 2rem;
+  text-align: center;
+  background-color: $vodoo;
+  color: $white;
+  font-size: 2rem;
+
+  &__link {
+    &:link,
+    &:visited {
+      color: $white;
+    }
+
+    &:focus,
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
