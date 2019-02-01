@@ -1,0 +1,73 @@
+// BLOG
+.blog {
+  @include flex-row-wrap;
+
+  justify-content: center;
+  background-color: $bossanova;
+  padding: 9rem 1.5rem;
+
+  &__posts {
+    @include flex-col;
+
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    flex: 100%;
+  }
+
+  &__post {
+    color: $white;
+    font-size: 2.1rem;
+    max-width: 60rem;
+    // border-bottom: 3px dotted $white;
+    margin: 5rem;
+    padding: 3rem 0;
+  }
+
+  &__text {
+    margin: 4rem 0;
+  }
+
+  &__title {
+    &::before,
+    &::after {
+      content: "";
+    }
+
+    font-family: "Economica", sans-serif;
+    text-align: left;
+  }
+
+  &__author,
+  &__date {
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+    font-weight: 700;
+    background-color: $white;
+    color: $vodoo;
+  }
+
+  &__author::before {
+    content: "by: ";
+  }
+
+  &__link {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem;
+    border: 3px solid $white;
+    transition: all 0.2s ease-in-out;
+
+    &:link,
+    &:visited {
+      color: $white;
+    }
+
+    &:focus,
+    &:hover {
+      background-color: $white;
+      color: $vodoo;
+    }
+  }
+}
