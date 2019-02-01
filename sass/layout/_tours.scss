@@ -6,6 +6,10 @@
   background-color: $bossanova;
   padding: 9rem 1.5rem;
 
+  @media screen and(min-width: $bp-medium) {
+    padding: 15rem 1.5rem;
+  }
+
   &__offers {
     @include flex-row-wrap;
 

@@ -16,7 +16,7 @@
 
   &__box {
     width: 100%;
-    padding: 2rem;
+    padding: 3rem;
     margin: 3rem 0;
 
     @media screen and (min-width: $bp-smallest) {
@@ -26,6 +26,10 @@
 
       justify-content: center;
       align-items: center;
+    }
+
+    @media screen and (min-width: $bp-medium) {
+      width: 25%;
     }
   }
 

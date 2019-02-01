@@ -232,14 +232,22 @@ img {
   .header__content {
     color: #000;
     text-align: center;
+    font-size: 1.8rem;
     width: 55%;
     animation: slideDown 0.8s ease-in;
     background-color: rgba(255, 255, 255, 0.7);
     padding: 1rem;
     font-family: "Special Elite", cursive;
     max-width: 60rem; }
+    @media screen and (min-width: 56.25em) {
+      .header__content {
+        font-size: 2.5rem;
+        padding: 2rem; } }
   .header__text {
     font-size: 2rem; }
+    @media screen and (min-width: 56.25em) {
+      .header__text {
+        font-size: 2.5rem; } }
   .header__btn {
     border: none;
     background-color: #632c65;
@@ -251,6 +259,9 @@ img {
     font-family: inherit;
     text-decoration: none;
     transition: all 0.2s ease-in-out; }
+    @media screen and (min-width: 56.25em) {
+      .header__btn {
+        font-size: 2.5rem; } }
     .header__btn:focus, .header__btn:hover {
       background-color: #e2a9e5;
       color: #000; }
@@ -276,6 +287,12 @@ img {
   background-color: #4b384c;
   text-align: center;
   line-height: 2rem; }
+  @media screen and (min-width: 56.25em) {
+    .arrow {
+      width: 6rem;
+      height: 6rem;
+      font-size: 2.6rem;
+      line-height: 4rem; } }
   .arrow:hover {
     background-color: #632c65; }
   .arrow-left {
@@ -312,6 +329,9 @@ img {
   justify-content: center;
   background-color: #632c65;
   padding: 9rem 1.5rem; }
+  @media screen and (min-width: 75em) {
+    .tours {
+      padding: 15rem 1.5rem; } }
   .tours__offers {
     display: flex;
     flex-flow: row wrap;
@@ -366,6 +386,9 @@ img {
   justify-content: center;
   background-color: #4b384c;
   padding: 9rem 1.5rem; }
+  @media screen and (min-width: 75em) {
+    .shops {
+      padding: 15rem 1.5rem; } }
   .shops__offers {
     display: flex;
     flex-flow: row wrap;
@@ -394,6 +417,9 @@ img {
   justify-content: center;
   background-color: #fff;
   padding: 9rem 1.5rem; }
+  @media screen and (min-width: 75em) {
+    .feeds {
+      padding: 15rem 1.5rem; } }
   .feeds__content {
     display: flex;
     flex-flow: row wrap;
@@ -498,7 +524,7 @@ img {
     padding: 0; }
   .contacts__box {
     width: 100%;
-    padding: 2rem;
+    padding: 3rem;
     margin: 3rem 0; }
     @media screen and (min-width: 37.5em) {
       .contacts__box {
@@ -507,6 +533,9 @@ img {
         flex-flow: column wrap;
         justify-content: center;
         align-items: center; } }
+    @media screen and (min-width: 75em) {
+      .contacts__box {
+        width: 25%; } }
   .contacts__link {
     text-decoration: none; }
     .contacts__link:link, .contacts__link:visited {
@@ -545,3 +574,14 @@ img {
         border: 1px solid #fff; }
   .contacts__list {
     padding: 2rem; }
+
+.credits {
+  padding: 2rem;
+  text-align: center;
+  background-color: #4b384c;
+  color: #fff;
+  font-size: 2rem; }
+  .credits__link:link, .credits__link:visited {
+    color: #fff; }
+  .credits__link:focus, .credits__link:hover {
+    text-decoration: none; }
