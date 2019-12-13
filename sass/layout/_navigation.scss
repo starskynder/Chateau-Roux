@@ -59,11 +59,13 @@
   &__btn--active &__icon::before {
     top: 0;
     transform: rotate(135deg);
+    background-color: $mint-green;
   }
 
   &__btn--active &__icon::after {
     top: 0;
     transform: rotate(-135deg);
+    background-color: $mint-green;
   }
 
   &__list {
